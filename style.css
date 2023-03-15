@@ -46,7 +46,7 @@ body {
     }
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
     align-self: center;
 }
 
@@ -68,10 +68,10 @@ input[type="submit"]:hover {
     border: 1px solid var(--main4);
 }
 
-input, 
-input:-webkit-autofill, 
+input,
+input:-webkit-autofill,
 input:-internal-autofill-selected {
-    background-color:  rgba(255, 255, 255, 0.479);
+    background-color: rgba(255, 255, 255, 0.479);
     border: 1px solid var(--dark-font);
     padding: 12px;
     font-size: 16px;
@@ -96,19 +96,19 @@ input[type="submit"] {
 }
 
 input[type="button"]:hover,
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     transform: scale(1.02);
 }
 
 /*CONTAINERS*/
 
-.button-container{
+.button-container {
     justify-content: center;
     display: flex;
     margin: 40px;
 }
 
-.modal-box{
+.modal-box {
     position: fixed;
     z-index: 1;
     top: 50%;
@@ -122,11 +122,11 @@ input[type="submit"]:hover{
     transition: 0.2s ease-in-out;
 }
 
-.modal-box.actived{
+.modal-box.actived {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.overlay{
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -136,17 +136,17 @@ input[type="submit"]:hover{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.overlay.actived{
+.overlay.actived {
     display: block;
 }
 
-.add-book-form{
+.add-book-form {
     gap: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.card-container{
+.card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
@@ -167,9 +167,9 @@ input[type="submit"]:hover{
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
 
-.book-card.read{
+.book-card.read {
     background-color: rgb(140, 253, 140);
 }
 
@@ -236,17 +236,40 @@ input[type="checkbox"]:checked+label::after {
 /*IMAGES*/
 
 .icon {
-    width: 15px;
     margin: 10px;
     opacity: 0.8;
     align-self: self-end;
-    position: fixed;
     right: 0;
-    margin: 1rem;
     top: 0;
+}
+
+.icon.cross {
+    width: 15px;
+    position: fixed;
+    margin: 1rem;
+}
+
+
+.icon.git {
+    width: 30px;
 }
 
 .icon:hover {
     cursor: pointer;
     transform: scale(1.15);
+}
+
+/*FOOTER*/
+
+footer {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    right: 40%;
+    left: 40%;
+}
+
+.footer-message {
+    align-items: center;
+    display: flex;
 }
