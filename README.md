@@ -3,12 +3,9 @@
 
 Styled page to add and remove books with cards.
 
-https://marcpuerto.github.io/Exercices/
-
-
 ## Screenshots
 
-![App Screenshot](https://imgur.com/gallery/KM5wlrS)
+![App Screenshot](https://i.imgur.com/skGV5EZ.png)
 
 
 ## Authors
