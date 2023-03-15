@@ -46,6 +46,10 @@ body {
     }
 }
 
+h1, h2, h3, h4{
+    align-self: center;
+}
+
 /*BUTTONS*/
 
 input[type="button"] {
@@ -91,8 +95,9 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    border: 1px solid var(--main4);
+input[type="button"]:hover,
+input[type="submit"]:hover{
+    transform: scale(1.02);
 }
 
 /*CONTAINERS*/
@@ -102,7 +107,6 @@ input[type="submit"]:hover {
     display: flex;
     margin: 40px;
 }
-
 
 .modal-box{
     position: fixed;
@@ -142,6 +146,32 @@ input[type="submit"]:hover {
     flex-direction: column;
 }
 
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    line-height: 1.2;
+    background-color: #f78688;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+.book-card.read{
+    background-color: rgb(140, 253, 140);
+}
 
 /*Check box*/
 
@@ -187,7 +217,7 @@ label::after {
 }
 
 input[type="checkbox"]:checked+label {
-    background: var(--main1);
+    background: var(--dark-font);
     border: none;
 }
 
@@ -196,7 +226,7 @@ input[type="checkbox"]:hover:not(:checked)+label {
 }
 
 input[type="checkbox"]:hover:checked+label {
-    box-shadow: 0 0 8px 0 #a0a0a0a0;
+    box-shadow: 0 0 8px 0 var(--dark-font);
 }
 
 input[type="checkbox"]:checked+label::after {
